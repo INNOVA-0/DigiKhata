@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "240833857836",
+    "project_id": "ekhata-6c2c5",
+    "storage_bucket": "ekhata-6c2c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240833857836:android:0ea3bc84f64caf47fb0489",
+        "android_client_info": {
+          "package_name": "com.innova.digikhata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240833857836-q52847ijbirij2c256tmf317o87vgkh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innova.digikhata",
+            "certificate_hash": "ee751a061676f11e21791d83988ce49aac59df3b"
+          }
+        },
+        {
+          "client_id": "240833857836-qjdgkcmvpbveohe39utgnq44f0en882n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzkzEkiXAEAabRdU2kELHj4bRmIdtb450"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240833857836-qjdgkcmvpbveohe39utgnq44f0en882n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
