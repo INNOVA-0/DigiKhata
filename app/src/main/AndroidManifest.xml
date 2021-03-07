@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DigiKhata">
-        <activity android:name=".VerifyOtp"></activity>
+        <activity android:name=".BusinessTypes"></activity>
+        <activity android:name=".VerifyOtp" />
         <activity android:name=".PhoneVerification" />
         <activity android:name=".SplashScreen">
             <intent-filter>

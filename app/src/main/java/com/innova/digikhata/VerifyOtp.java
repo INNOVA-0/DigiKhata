@@ -83,11 +83,13 @@ public class VerifyOtp extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
 
-//                                Intent intent = new Intent(VerifyOtp.this, SplashScreen.class);
-//                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//
-//                                startActivity(intent);
                                 Toast.makeText(VerifyOtp.this, "OTP Sent", Toast.LENGTH_LONG).show();
+
+                                Intent intent = new Intent(VerifyOtp.this, BusinessTypes.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                                startActivity(intent);
+
 
                             } else {
                                 Toast.makeText(VerifyOtp.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
