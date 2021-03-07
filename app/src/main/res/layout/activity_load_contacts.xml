@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top" android:background="#fff" android:layout_width="match_parent" android:layout_height="70dp">
+        <EditText android:textSize="20dp" android:textColor="#000" android:id="@+id/search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:hint="Type Customer name" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/backB" android:background="#fff" android:paddingTop="20dp" android:layout_width="50dp" android:layout_height="70dp" android:drawableTop="@drawable/ic_arrow_new_back" android:layout_centerVertical="true" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </RelativeLayout>
+    <Button android:textColor="#ff6701" android:id="@+id/addManually" android:background="#fff" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="10dp" android:text="Add new customer" android:drawableLeft="@drawable/ic_person_add_black_24dp" android:drawableRight="@drawable/ic_keyyyy" android:layout_below="@+id/top"/>
+    <TextView android:textSize="18dp" android:textColor="#000" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="Add Customer from Contacts" android:layout_below="@+id/addManually"/>
+    <ListView android:id="@+id/list" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/addManually"/>
+</RelativeLayout>

@@ -44,4 +44,16 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/round_views</item>
     </style>
+
+    // generated
+    <style name="toolbar" parent="Base.V26.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+    </style>
+
+    <style name="baseToolbar" theme="Widget.Design.AppBarLayout">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+    </style>
+
 </resources>

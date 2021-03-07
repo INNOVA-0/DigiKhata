@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="70dp">
+        <Button android:id="@+id/btnBack" android:background="#fff" android:paddingTop="20dp" android:layout_width="50dp" android:layout_height="70dp" android:drawableTop="@drawable/back_gray" style="@style/Widget.AppCompat.Button.Borderless"/>
+        <TextView android:textSize="20sp" android:textColor="#000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_business" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="60dp"/>
+    </RelativeLayout>
+    <EditText android:textSize="20sp" android:id="@+id/eName" android:background="#ffffff" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginTop="120dp" android:hint="@string/EnterYourBusinessName" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textStyle="bold" android:textColor="#fff" android:id="@+id/btnSave" android:background="@drawable/round_views" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/save" android:textAllCaps="false"/>
+    </ScrollView>
+</RelativeLayout>

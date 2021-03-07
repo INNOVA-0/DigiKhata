@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_toolbar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageButton android:id="@+id/back" android:background="@android:color/transparent" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/ic_arrow_new_back" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="20sp" android:textColor="#000000" android:id="@+id/reportText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trans" android:layout_toRightOf="@+id/back" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed">
+                <RelativeLayout android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="none">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/topBalance" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="1dp" android:layout_weight="1">
+                            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#008000" android:textColorHint="#008000" android:id="@+id/amGo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Rs. 0" android:maxLines="1"/>
+                            <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/got" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/got"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#b30000" android:textColorHint="#b30000" android:id="@+id/amGi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Rs. 0" android:maxLines="1"/>
+                            <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/gave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gave"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/NetBalanacee" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="2dp" android:layout_below="@+id/topBalance">
+                        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#b30000" android:textColorHint="#b30000" android:gravity="center" android:id="@+id/netBal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Rs. 0" android:maxLines="1"/>
+                        <TextView android:textSize="14sp" android:textColor="#000" android:id="@+id/netBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net"/>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/second" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="2dp" android:layout_below="@+id/NetBalanacee">
+                        <TextView android:textSize="15sp" android:textColor="#008080" android:gravity="center" android:id="@+id/txStDate" android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/start"/>
+                        <TextView android:textSize="20sp" android:textColor="#008080" android:gravity="center" android:id="@+id/centre" android:layout_width="25dp" android:layout_height="match_parent" android:text="-" android:layout_toRightOf="@+id/txStDate" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="15sp" android:textColor="#008080" android:gravity="center" android:id="@+id/txDateend" android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/end" android:layout_toRightOf="@+id/centre"/>
+                        <Spinner android:id="@+id/reportSpinner" android:visibility="gone" android:layout_width="120dp" android:layout_height="20dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                        <ImageButton android:id="@+id/sort" android:background="#f2f2f2" android:padding="8dp" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginRight="20dp" android:src="@drawable/ic_format_line_spacing_black_24dp" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <RelativeLayout android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/second">
+                <TextView android:textSize="15sp" android:textColor="#000000" android:gravity="left" android:id="@+id/repoName" android:paddingLeft="10dp" android:paddingTop="5dp" android:layout_width="160dp" android:layout_height="25dp" android:text="Total"/>
+                <TextView android:textSize="10sp" android:textColor="#000000" android:id="@+id/repoDate" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Entries" android:layout_below="@+id/repoName"/>
+                <TextView android:textColor="#000000" android:gravity="right" android:id="@+id/gave1" android:paddingTop="5dp" android:paddingRight="5dp" android:layout_width="100dp" android:layout_height="25dp" android:text="@string/gave" android:layout_toRightOf="@+id/repoName"/>
+                <TextView android:textSize="10sp" android:textColor="#b30000" android:gravity="right" android:id="@+id/repoggave" android:paddingRight="5dp" android:layout_width="100dp" android:layout_height="20dp" android:layout_marginBottom="5dp" android:text="Rs. 0" android:layout_toRightOf="@+id/repoName" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="10sp" android:textColor="#008000" android:gravity="right" android:id="@+id/repoggot" android:paddingRight="5dp" android:layout_width="100dp" android:layout_height="20dp" android:layout_marginRight="-1dp" android:layout_marginBottom="6dp" android:text="Rs. 0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <TextView android:textColor="#000000" android:gravity="right" android:id="@+id/got1" android:paddingTop="5dp" android:paddingRight="5dp" android:layout_width="100dp" android:layout_height="25dp" android:layout_marginRight="2dp" android:text="@string/got" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingBottom="100dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <Button android:textSize="13dp" android:textColor="#ffff" android:gravity="center" android:id="@+id/report" android:background="@drawable/btnred" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="@string/report" android:drawableLeft="@drawable/ic_doooo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+</RelativeLayout>

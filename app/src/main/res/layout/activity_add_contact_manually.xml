@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/top" android:background="#fff" android:layout_width="match_parent" android:layout_height="70dp">
+            <TextView android:textSize="20dp" android:textColor="#000" android:id="@+id/heading22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:text="@string/newcustomer" android:layout_centerVertical="true"/>
+            <Button android:id="@+id/backB" android:background="#fff" android:paddingTop="20dp" android:layout_width="50dp" android:layout_height="70dp" android:drawableTop="@drawable/back_gray" android:layout_centerVertical="true" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </RelativeLayout>
+        <TextView android:textSize="18dp" android:textColor="#ff6701" android:id="@+id/label1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/customer_name" android:layout_below="@+id/top"/>
+        <EditText android:textSize="18dp" android:id="@+id/name"  android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:layout_marginTop="10dp" android:layout_below="@+id/label1"/>
+        <TextView android:textSize="18dp" android:textColor="#ff6701" android:id="@+id/label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/phone_number_optional" android:layout_below="@+id/name"/>
+        <EditText android:textSize="18dp" android:id="@+id/phone"  android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:layout_marginTop="10dp" android:maxLength="15" android:layout_below="@+id/label2" android:inputType="phone"/>
+        <Button android:textSize="20dp" android:textStyle="bold" android:textColor="#ffff" android:id="@+id/btnsave" android:background="@drawable/round_views" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="@string/save" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

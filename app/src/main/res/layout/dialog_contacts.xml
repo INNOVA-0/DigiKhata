@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/signin_btn_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linLay" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ff6701" android:id="@+id/addManually" android:background="#faefea" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="70dp" android:text="@string/add_new_customer" android:drawableLeft="@drawable/ic_person_add_black_24dp"/>
+        <Button android:textColor="#ff6701" android:id="@+id/btnContacts" android:background="#faefea" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="10dp" android:text="@string/select_from_contacts" android:drawableLeft="@drawable/ic_contacts_black_24dp"/>
+    </LinearLayout>
+</RelativeLayout>
